@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramiro Silva & Digital Lawyers | Idoneidad y Dominio del Derecho</title>
 
+    <!-- Etiqueta Canónica para evitar duplicidad en Google Search Console -->
+    <link rel="canonical" href="https://framiro-silva-digital-lawyers.vercel.app/">
+
     <!-- Favicon (Ícono de la balanza en la pestaña) -->
     <link rel="icon" type="image/png" href="balanza.png">
 
@@ -180,14 +183,11 @@
         <div class="grid lg:grid-cols-12 gap-12 items-center">
 
             <div class="lg:col-span-5" data-aos="fade-right">
-                <!-- INICIO DE LA IMAGEN DEL ABOGADO AGREGADA Y CORREGIDA -->
                 <div class="mb-10 lg:mb-12 overflow-hidden border border-gold/40 shadow-xl gold-glow group bg-stone-100 flex justify-center items-center">
-                    <!-- Imagen extraída de Unsplash para asegurar su funcionamiento -->
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
                         alt="Fotografía Profesional del Dr. Ramiro Silva Rodríguez"
                         class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
-                <!-- FIN DE LA IMAGEN DEL ABOGADO AGREGADA Y CORREGIDA -->
 
                 <span class="text-gold font-semibold tracking-[0.2em] uppercase text-xs block mb-3">Dirección del Bufete</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-normal text-dark mb-4">Dr. Ramiro Silva Rodríguez</h2>
@@ -280,7 +280,7 @@
                     </div>
                     <h3 class="font-serif text-xl text-dark mb-3 group-hover:text-gold transition-colors">Derecho Penal y Militar</h3>
                     <p class="text-stone-600 text-xs leading-relaxed font-light">
-                        Defensa y representation técnica en asuntos penal ordinario, disciplinario, policivo y castrense.
+                        Defensa y representación técnica en asuntos penal ordinario, disciplinario, policivo y castrense.
                     </p>
                 </div>
 
@@ -478,90 +478,53 @@
                             <input type="email" required class="w-full px-4 py-3 bg-cream border border-stone-200 text-xs focus:outline-none focus:border-gold transition-colors">
                         </div>
                     </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        <div>
-                            <label class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">Celular / Teléfono</label>
-                            <input type="tel" required class="w-full px-4 py-3 bg-cream border border-stone-200 text-xs focus:outline-none focus:border-gold transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">Ciudad</label>
-                            <input type="text" required class="w-full px-4 py-3 bg-cream border border-stone-200 text-xs focus:outline-none focus:border-gold transition-colors">
-                        </div>
-                    </div>
-
                     <div>
-                        <label class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">Detalle de la Consulta</label>
+                        <label class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">Teléfono de Contacto</label>
+                        <input type="tel" class="w-full px-4 py-3 bg-cream border border-stone-200 text-xs focus:outline-none focus:border-gold transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">Mensaje o Detalle del Caso</label>
                         <textarea rows="4" required class="w-full px-4 py-3 bg-cream border border-stone-200 text-xs focus:outline-none focus:border-gold transition-colors"></textarea>
                     </div>
-
-                    <button type="submit"
-                        class="w-full bg-dark hover:bg-navy text-gold border border-gold/40 py-4 text-xs font-semibold tracking-wider uppercase transition-all duration-300 gold-glow hover:scale-[1.01] active:scale-95">
-                        Enviar Consulta
+                    <button type="submit" class="w-full bg-dark hover:bg-navy text-gold border border-gold/40 py-4 text-xs font-semibold tracking-wider uppercase transition-all duration-300 cursor-pointer">
+                        Enviar Requerimiento
                     </button>
                 </form>
-
-                <!-- Mensaje de éxito interactivo -->
-                <div id="form-success" class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center text-center p-8 transition-all">
-                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-4">
-                        <i data-lucide="check-circle-2" class="w-8 h-8"></i>
-                    </div>
-                    <h4 class="font-serif text-2xl text-dark mb-2">Mensaje Enviado</h4>
-                    <p class="text-stone-600 text-xs max-w-sm mb-6">Hemos recibido su consulta. Nos pondremos en contacto con usted a la brevedad posible.</p>
-                    <button onclick="resetForm()" class="bg-dark text-gold px-6 py-2.5 text-xs font-semibold uppercase tracking-wider">Enviar otra consulta</button>
-                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Botón Flotante de WhatsApp con pulso animado -->
-    <a href="https://wa.me/573105668164" target="_blank"
-        class="fixed bottom-6 right-6 bg-dark text-gold border border-gold p-4 shadow-2xl hover:bg-navy transition-all duration-300 z-50 flex items-center justify-center rounded-full hover:scale-110 active:scale-95 group"
-        aria-label="WhatsApp">
-        <span class="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full animate-ping"></span>
-        <i data-lucide="message-circle" class="w-6 h-6 group-hover:rotate-12 transition-transform"></i>
-    </a>
-
     <!-- Footer -->
-    <footer class="bg-dark text-stone-400 py-10 text-center text-xs border-t border-gold/20 font-light">
-        <p>&copy; 2026 Ramiro Silva & Digital Lawyers. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-stone-400 py-12 px-6 border-t border-stone-800 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif font-bold text-lg text-white block mb-1">RAMIRO SILVA & Digital Lawyers</span>
+                <p class="text-stone-500">Idoneidad y Dominio del Derecho. Todos los derechos reservados © 2026.</p>
+            </div>
+            <div class="flex space-x-6 text-stone-400">
+                <a href="#perfil" class="hover:text-gold transition-colors">El Jurista</a>
+                <a href="#areas" class="hover:text-gold transition-colors">Áreas</a>
+                <a href="#cobertura" class="hover:text-gold transition-colors">Cubrimiento</a>
+                <a href="#sedes" class="hover:text-gold transition-colors">Sedes</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- JS de Lucide Icons & AOS -->
+    <!-- Scripts (AOS, Lucide, Form Handler) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Inicializar Iconos
-        lucide.createIcons();
-
-        // Inicializar Librería de Animaciones al Scroll
         AOS.init({
             duration: 800,
             once: true,
-            easing: 'ease-out-cubic'
         });
+        lucide.createIcons();
 
-        // Cambio de Sombra en Header al hacer scroll
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('main-header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-md', 'bg-cream');
-            } else {
-                header.classList.remove('shadow-md');
-            }
-        });
-
-        // Formulario Interactivo
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            document.getElementById('form-success').classList.remove('hidden');
-        }
-
-        function resetForm() {
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto con usted pronto.');
             document.getElementById('contact-form').reset();
-            document.getElementById('form-success').classList.add('hidden');
         }
     </script>
 </body>
-
 </html>
